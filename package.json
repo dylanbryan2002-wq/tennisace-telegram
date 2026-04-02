@@ -1,0 +1,17 @@
+{
+  "name": "tennisace-telegram",
+  "version": "1.0.0",
+  "description": "Tennisace Telegram AI assistant for tennis coaches",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.39.0",
+    "express": "^4.21.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
