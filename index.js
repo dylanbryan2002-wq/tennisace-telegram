@@ -190,7 +190,7 @@ app.get('/', (req, res) => {
 // Hit this endpoint once to register webhook with Telegram
 // ============================================
 app.get('/setup-webhook', async (req, res) => {
-  const webhookUrl = `${req.protocol}://${req.get('host')}/webhook/telegram`;
+  const webhookUrl = `https://${req.get('host')}/webhook/telegram`;
   const url = `https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/setWebhook?url=${encodeURIComponent(webhookUrl)}`;
 
   const response = await fetch(url);
